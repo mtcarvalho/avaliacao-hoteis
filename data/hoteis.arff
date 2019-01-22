@@ -1,0 +1,951 @@
+@relation 'hotel_reviews'
+@attribute text string
+@attribute class {neg, pos}
+@data
+
+'vocês são o melhor ', pos
+
+'foi muito grato trabalhar com voces ', pos
+
+'realizei o aniversario de meu sobrinho na terca fiz, a locacão da mesa decorada do tema toy store desde o inicio foram bem atenciosos/n desde o contato telefonico esclarecendo duvidas na montagem e desmontagem da mesa a equipe foi bem discreta, e claro a mesa estava muito linda todos adoraram com certeza indico essa empresa equipe esta de parabens ', pos
+
+'gostei muito do atendimento personalizado/n ', pos 
+
+'grande hotel com otimas acomodacoes, a beira da praia Sensacional piscina, e com otimos restaurantes/n ainda que os preços nao sejam os mais convidativos ', pos 
+
+'Destaque para a hidromassagem superaquecida e o atendimento ', pos 
+
+'Espetacular, Super Confortavel e Moderno Muito bom hotel quartos de bom tamanho, varias comodidades boas opcoes de restaurantes ', pos
+
+'gostei muito, a decoracão de Natal esta linda atendimento excelente, chegamos bem antes do horario e não tivemos problema ', pos 
+
+'nossa, sem palavras, atendimento quarto limpeza localizacao Quer umas ferias inesqueciveis fique aqui ', pos
+
+'Muito bom hotel, quartos de bom tamanho, varias comodidades, boas opcoes de restaurantes ', pos 
+
+'O ambiente é sofisticado porém não ostensivo, que particularmente me agradam ', pos 
+
+'Recomendado se pretende ficar em um excelente hotel, muito conforto ', pos
+
+'Achei o resort excelente, Ele tem uma ótima localização, na beira do mar e com uma piscina deliciosa ', pos
+
+'Possui excelentes restaurantes e um café da manhã com muitas opções' ,pos 
+
+'Ele tem uma ótima localização ', pos
+
+'Resort esplendoroso, Atendimento extremamente cordial, Restaurantes maravilhosos ', pos
+
+'Recomendo este hotel em Cancun pelas instalações ', pos
+
+'Excelente hotel, otimo custo beneficio. otima localização ', pos 
+
+'Tivemos excelente estadia, quarto com vista para mar. Café da manhã incrível ', pos 
+
+'Foi ótimo o período que passei ', pos 
+
+'Esse resort é simplesmente perfeito ', pos 
+
+'O café da manhã foi o melhor que já comi na vida ',pos 
+
+'O hotel é maravilhoso, todo decorado com mármore, e imponentes lustres, contrastando com a linda praia em frente ao hotel ',pos
+
+'Excelente,perfeitas as acomodações extremamente confortáveis,muito bom os serviços ', pos 
+
+'minha experiência, foi maravilhosa. Hotel luxuoso, perfeito para famílias e convençoes, o quarto super limpo e organizado ',pos
+
+'Minhas ferias en cancun foram otimas. Gostei muito do hotel, belos apartamentos, bom serviço, limpeza e bom ambiente ', pos 
+
+'O cafe e extraordinário, muita variedade e saboroso ',pos 
+
+'Para os apaixonados, o Hotel oferece recantos silenciosos e românticos frente ao mar ',pos 
+
+'comida deliciosa,o custo nem é tao alto assim ',pos
+
+'Muito bom hotel, apartamento amplo, confortável, limpo e com um visual incrível ',pos 
+
+'Instalações limpas e bem conservadas. Bem localizado ',pos 
+
+'Na minha opiniao e o melhor hotel ',pos
+
+'Cafe da manha o mais completo que ja vi em minha vida ',pos
+
+'Quartos limpissimos e espacosos ',pos 
+
+'Um Hotel que indico para qualquer pessoa, pois tem uma estrutura fantástica e super confortável. Os quartos são excelentes, o atendimento primordial e a estrutura perfeita com uma vista para o mar que é inesquecível. Os restaurantes são muito bons e tem comidas super saborosas ', pos
+
+'é um lugar lindo e indescritível, os quartos são maravilhosos, a comida perfeita, o atendimento é muito bom e as opções de laser são excelentes ',pos 
+
+'otimo custo beneficio ', pos
+
+'Realmente um hotel divino pensado em todos os detalhes, se alguem quer ir a Cancun e desfrutar de um hotel belissimo super confortavel ',pos 
+
+'Um hotel de alto padrão, excelente onde escolhi para passar minha lua de mel ',pos
+
+'Quartos perfeitos, limpeza impecável, café da manha maravilhoso, piscinas e spa fantásticos ',pos
+
+'Foi uma experiência incrível, O hotel conta com uma arquitetura maravilhosa, limpeza impecável ',pos
+
+'Excelente Hotel com um serviço de primeira linha, destaque para o café da manhã ', pos
+
+'Hotel grande e bonito. Quartos no tamanho suficiente, novos, com frigobar, grande varanda com vista para o mar ',pos
+
+'Sem sobre de dúvidas o hotel é muito espaçoso e confortável. O café da manhã é farto e cheio de opções ',pos
+
+'Os quartos são de um bom tamanho e as camas confortáveis ',pos 
+
+'Hotel muito bonito, impressiona a arquitetura e o hall de entrada ',pos
+
+'Ótimos preços, quartos confortáveis e muito bem conservados e limpos ',pos 
+
+'O Hotel é extremamente belo, Os quartos são muito confortáveis e a cama maravilhosa ',pos ,
+
+'O hotel é mto bom, funcionários dedicados, comida Maravilhosa ',pos
+
+'Hotel antigo, porém muito bem conservado, Quartos enormes, muito confortáveis e limpos, Atendimento impecável em todos setores do hotel ', pos
+
+'Ótimo hotel ',pos
+
+'simplesmente maravilhoso, desde o atendimento, serviço de quarto, limpeza, a decoração dos quartos é de muito bom gosto ',pos 
+
+'Excelente Serviço de quarto, muito atenciosos, atendimento impecável, realmente uma experiencia incrivel, me sentia em um filme ',pos 
+
+'Nunca estive num lugar tào perfeito,confesso que até chorei quando vim embora ',pos
+
+'Simplesmente maravilhoso, Hotel lindo, funcionários simpáticos e prestativos, Café da manhã impecável ',pos
+
+' Ficamos muito satisfeitos com a escolha ', pos 
+
+'o café da manha é o melhor que já vimos, Atendimento, limpeza e serviços de quarto impecáveis ',pos
+
+'Otimo lugar em Cancun, tudo funcionando perfeitamente. Otimos restaurantes no Hotel. ',pos 
+
+'Café da manhã é espetacular, quarto grande e limpo, atendimento ótimo, piscina boa ',pos
+
+'Tudo estava excelente: o serviço, a limpeza e a qualidade da comida. A praia era maravilhosa. O pessoal da recepção era muito competente ',pos
+
+'Hotel de primeira linha, super-confortável, com uma linda decoração. Piscina ótima, Café da manhã insuperável ', pos 
+
+'Excelente hotel, Concierges atenciosos, Excelente infra-estrutura, Quartos confortáveis e espaçosos, Pena que o café-da-manhã não é incluído, Recomendo ',pos
+
+'Os quartos são excelentes, Espaçosos, novos, a cama é super confortável, As sacadas têm vista para o mar ',pos 
+
+'A localização é perfeita ',pos 
+
+'Tivemos uma fantástica estadia nesse hotel! Novo, arquitetura e decoração moderna ',pos
+
+'Otima localizacao, quartos amplos e confortaveis, Varios restaurantes, otima comida ',pos
+
+'Excelente estrutura, Quartos novos, espaçosos e com decoração de bom gosto ',pos
+
+'estrutura toda nova, vista maravilhosa para o oceano azul turquesa em todos os apartamentos, ótimos serviços, funcionários bem treinados ',pos
+
+'Hotel excelente, Serviço excelente, Quartos muito confortáveis e espaçosos ',pos
+
+'Comida com muitas opções ',pos 
+
+'Os quartos são limpos, bem decorados, a cama muito confortável ',pos 
+
+'Hotel excelente. É um dos mais novos de Cancun, com uma decoração de cores fortes e quartos confortabilíssimos ',pos 
+
+'Excelente hotel, melhor que já fiquei na vida, A estrutura de piscina, restaurantes e atividades é fantástica, muito diversificada ',pos 
+
+'Ótimo hotel, o mais novo ',pos 
+
+'Instalações em perfeitas condições, funcionários educados ',pos 
+
+'Este hotel superou todas as minhas expectativas: comida maravilhosa ',pos 
+
+'Perfeito, fomos passar a lua de mel e adoramos. Ótimo atendimento, restaurantes e as piscinas são maravilhosas ',pos 
+
+'Tudo neste hotel é pensado para o seu bem estar, O serviço é muito bom, todos são muito simpáticos e agradáveis ',pos
+
+'Localizado em um ótimo ponto na zona Hoteleira ',pos
+
+'Hotel muito bom, com uma estrutura de serviço valiosa ',pos
+
+'Hotel maravilhoso. Atendimento impecável, Os quartos são enormes e possum banheira de hidromassagem ',pos
+
+'hotel maravilhoso, atendimento impecável por todos os funcionários ',pos
+
+'ótimo atendimento dos garcons e recepcionistas ',pos
+
+'Hotel bem localizado com excelente atendimento. Suite ampla com vista para a imensa piscina ',pos
+
+'Hotel excelente, ótimo atendimento, quarto lindíssimo, piscinas, bares, restaurantes, tudo perfeito ',pos
+
+'Um resort que nao deixa nada a desejar. Maravilhoso. Comida excelente. Todo tipo de bebida. Otimo atendimento ',pos
+
+'Simplesmente inesquecível, Tudo funciona perfeitamente, recomendo, Passei minha lua de mel ',pos
+
+' Maravilhoso, Comida excelente, Otimo atendimento ',pos
+
+' atendendimento pé otimo a gentileza e cordialismo dos funcionarios é muito boa ',pos
+
+'Experiência simplesmente incrível neste hotel, serviço superou nossas expectativas, a localização é boa ',pos
+
+'O hotel é excelente, todo moderno, O quarto é grande, com banheira, com ótima vista ',pos
+
+'Quarto comfortavel. Voltaria la com certeza e recomendo ',pos
+
+'Linda toda estrutura do hotel ',pos
+
+'O hotel é simplesmente perfeito ',pos
+
+'Superou todas as minhas expectativas ',pos
+
+'Os quartos são limpos, possuem um excelente Ocean View, serviço de quarto, O hotel no geral é bem grande e confortável, há diversos tipos de piscinas para todas as idades, com entretenimento dos monitores ',pos
+
+' Os atendentes são muito corteses e estão sempre dispostos a ajudar ',pos
+
+'Superou as expectativas, principalmente quanto a comida e estrutura. Excelente piscina, ótimos restaurantes e drinks ',pos
+
+'Excelente, serviço impecável comida maravilhosa ',pos
+
+'O hotel é excelente em diversos aspectos, desde a localização até o serviço geral. A comida é muito boa e variada. As bebidas são de boa qualidade e de marcas conhecidas. O serviço de quarto e a limpeza também são quase impecáveis ',pos 
+
+'foi algo deplorável ', neg
+
+'As habitações são velhas e sem nenhum cuidado ', neg
+
+'Nunca imaginei que a rede Othon mantivesse uma unidade em tão mau estado e com atendimento tão precário ', neg
+
+' hotel é muito antigo e com equipamentos muitos velhos, mesmo na taxa superior ', neg
+
+'difícil é falar de um hotel ruim. Preço elevadíssimo considerando o péssimo nível de serviço e qualidade das instalações ', neg
+
+'Quero deixar registrado aqui minha profunda insatisfação com os serviços prestados ', neg
+
+'Esse hotel deixa muito a desejar nos quesitos limpeza e estrutura ', neg
+
+'O hotel é extremamente velho, mal cuidado, os recepcionistas não têm o mínimo de atenção nem educação ',neg
+
+'O hotel é extremamente velho, mal cuidado, os recepcionistas não têm o mínimo de atenção nem educação ',neg
+
+'Sinceramente o pior hotel em que já estive ', neg
+
+
+'me decepcionei absurdamente com o Hotel. Sinceramente o pior hotel em que já estive ', neg
+
+'Péssimo na minha opinião, quarto velho, o banheiro velho com no minímo cem anos, que simplesmente dava nojo',neg
+
+'Pior hotel da minha vida!! Elevador nao funciona ',neg
+
+'esse deve ser longe o pior da linha ',neg
+
+'Chamar o quarto que me deram de classic é uma afronta. Uma verdadeira desonestidade ',neg
+
+'Infelizmente, o pior hotel que já fiquei. Velho, com carpetes mofados e banheiros horríveis, Quando chegamos, havia uma grande mancha de mofo no lençol da cama ',neg
+
+'Banheiro falta azulejos, e os azulejos que tem estao e cardidos. Quarto com cheiro de mofo e os lençóis sao velhos ',neg
+
+'O hotel é um lixo. A única coisa boa é a localização. Os elevadores são velhos e perigosos ', neg
+
+'Roupas de cama e toalhas encardidas e manchadas, pedi troca e vieram outras iguais.não se pode usar guarda roupas e gavetas porque estão mofados ',neg
+
+'Quarto muito pequeno e com cheiro de mofo; chuveiro com cortina, sem blindex ',neg
+
+'Estive em meados de abril no hotel e fiquei decepcionado com as condições do hotel, elevadores sem funcionar ',neg
+
+'sem dúvida alguma, o pior hotel em que já fiquei hospedado. E o problema maior é que  foi vendido como padrão 4 estrelas ',neg
+
+'O hotel encontra-se em condições precárias, embora o lobbye de entrada possa enganar a primeira vista ',neg
+
+'Inacreditavel um Hotel da rede ser tão horrivel. Tudo nele é ruin, velho, mofado, imundo, os tres elevadores so o de serviço funcionava ',neg
+
+'as acomodações são das piores com pisos de madeiras ocos por conta da ação de cupins, portas antigas e com maçanetas oxidadas, cortinas encardidas, camas que lhe dão coceira a partir do momento que se deita, Mas isso não é o pior, o gran finale é destinado ao banheiro que possui vasos sanitários aparentemente sujos e enferrujados ', neg
+
+' o pior hotel que eu já me hospedei na vida! Não tem estacionamento, elevadores não funcionam, quarto cheirando mofo, piso e parede destruídos, mobiliário velho ',neg
+
+'Hotel fede a mofo, o banheiro qdo voce banha enche de agua, muito ruim!!! ',neg
+
+' é tudo muuuiiito velho, tem cheiro de mofo, o banheiro é velho, mas velho mesmo. A banheira é daquelas brancas, da época da nossa vó, toda descascada ',neg
+
+'e levador em péssimas condições, porta do banheiro emperrada, não podia fechar, camas com colchoes horríveis, janelas emperradas, a torneira da banheira ',neg
+
+'é horrivel quarto e banheiro extremamente velhos e mal cheirosos, encontrei barata em uma das noites, banheira toda descascada, azulejos sujos, chão manchado e cortina do box nojenta ',neg
+
+' Infelizmente tive o desprazer de passar por vários transtornos no hotel, pois o mesmo possui acomodações em péssimas condições. Não se iludam a entrada foi reformada apenas para mascarar a situação do hotel que é velho demais, cheira mofo, os móveis são muito antigos ',neg
+
+'O hotel está mal cuidado, os quartos têm odor de mofo (andei por dois, pois o primeiro estava alagado por conta de um vazamento no frigobar) e ouvi outro hóspede reclamando da tampa do aparelho sanitário quebrada ',neg
+
+' A começar pelos elevadores: um caos! O quarto nem se fala, a maçaneta saiu em minha mão, os armários com as portas despencando e o banheiro sujo, com manchas no chão e uma banheira de dar nojo ',neg
+
+'Quartos em muito mal estado de conservação, sujeira e desinteresse pelo conforto dos hospedes. ',neg
+
+'banheiro com chão manchado, cortina wc imunda,motor infernal a noite inteira,moveis velhos,café ',neg
+
+'piorou demais, O quarto era antigo, com móveis velhos, meio decadentes ', neg
+
+'Hotel antigo, serviços caros e quartos defasados. TV com sinal errático. Muitos quartos estão com as varandas trancadas devido a uma reforma na fachada ',neg
+
+'já era ruim, instalações decadentes com um serviço médio. Agora que mudou para Royal Tulip, piorou ',neg
+
+'Trata-se do pior hotel que já estive em toda minha vida. Há uma penitenciaria nos arredores ',neg
+
+'o hotel é lamentável, nunca tantos problemas aconteceram conosco em uma única estada. A começar pelo ar condicionado, que além de ser aqueles antigos (de janela) estava estragado ', neg
+
+ 'Os funcionários eram horríveis, Fiz uma reclamação que estava faltando lençol no meu quarto, a camareira subiu e só faltou dar em mim ',neg
+
+'Pior hotel da minha vida, Chegamos no quarto estava tudo sujo, tinha até cigarros no vaso sanitário ',neg
+
+'equipe mal qualificada ', neg
+
+' em manutenção nenhuma, pessoal despreparado e alimentação bem básica ',neg
+
+'você encontra o mal atendimento na recepção, funcionários despreparados e pior o sistema do hotel ',neg
+
+'  quartos com ar condicionado quebrado e sem água quente ', neg
+
+'Cheiro de mofo no quarto, de urina no banheiro. Espelho todo manchado, pintura do quarto estufada, tapete poído, móveis descascados ',neg
+
+'Esse aqui nunca mais. O quarto é velho, a tv não funciona, internet esqueça ',neg
+
+'Os quartos são velhos e cheiram a mofo, a coberta parecia da minha bisavó. O hotel é bem sinistro, os corredores são escuros e quando o quarto de cima dá descarga no banheiro ouve se o barulho ',neg
+
+'Sujeira e mofo impregnando todo o apartamento. Tive nojo. Quase não dormi por conta das alergias ',neg
+
+' Quarto e banheiros sujos, cabelos no chão, no box e nas toalhas, tudo muito empoeirado ',neg
+
+'O atendimento na recepção foi o pior possível, grosseiro, sem educação, e isso foi o primeiro contato ',neg
+
+' me decepcionei com o gerente quando fui lesado pelos recepcionistas ', neg
+
+'Experiência horrível, Quando cheguei, havia quarto, mas não chaves suficientes ',neg
+
+'vem a recepcao que eh um horror, muito mal educados e sem vontade nenhuma, depois tem a escada q cheira mofo, um cheiro insuportavel ',neg
+
+'Por vezes temos a ingenuidade de pensarmos que as críticas que encontramos na internet não são, de fato, tão verdadeiras assim a ponto de impedir que curtamos os dias de hospedagem ',neg
+
+'Pessimo atendimento e instalaçoes ',neg
+
+'é simplesmente horrível. Todas as instalações são horríveis, velhas, quebradas ',neg
+
+'O banheiro com lodo, parecia que havia semanas que não eram limpos ',neg
+
+' indignado com a sujeira do hotel, mas principalmente com a arrogância e grosseria dos funcionários ',neg
+
+'Este hotel é um total desrespeito ao hóspede e precisa melhorar muito para ficar ruim. O quarto e toda a infraestrutura do hotel são extremamente antigos ',neg
+
+'Este foi o pior hotel no Rio que me hospedei. Mofo no banheiro, mobiliário velho, camas desconfortáveis, teto do banheiro com péssima aparência, frigobar sofrível ',neg
+
+'o gerente é um grosso que ainda acha ruim quando alguém reclama ',neg
+
+'tudo velho e abandonado, não é feita manutenção em nada neste hotel, fomos em três casais e em um dos quartos não tinha nem agua ',neg
+
+'O Hotel está em péssimo estado ',neg
+
+'Hotel velho, até ai tudo bem, já sabia e esperava, O que não imginava era um atendimento tão RUIM. Todos são mal encarados, rudes, não sabem o que é sorrir, ser simpaticos com os clientes ',neg
+
+' quarto percebe que o mesmo possui instalações velhas e sem manutenção ',neg
+
+'Simplesmente fuja desse hotel, Piores instalações que eu ja vi na vida, fora o preço exorbitante. É tudo nojento: quarto, banheiro, elevador, recepção, restaurante ',neg
+
+'Achei o banheiro escuro e com aspecto de muito sujo. O box e a parede do banheiro são terríveis da nojo de tomar banho ',neg
+
+'Pessimooo atendimento, Gerente um grosso, recepcionista um mal educado ',neg
+
+'As pessoas da recepção são super grossas, não sabem conversar, criam caso com qualquer coisa ',neg
+
+'O serviço é grosseiro sobretudo por parte do gerente, Te tratam como se fosse um vândalo em potencial, A lista de indelicadezas é muito extensa para este espaço ',neg
+
+'Vergonhosas habitações, velho, com muitos ruídos, sujo, higiene zero, café da manhã simplório, paredes sujas, banheiro nojento, toalhas rasgadas, ar condicionado barulhento e ineficiente ',neg
+
+'luz fraca: não consegui fazer minha barba direito - Sujo: tinha mofo na ducha, nos tetos ',neg
+
+'Hotel desonesto, rude, que não assume os compromissos previamente pagos ',neg
+
+'péssimo atendimento, péssimos quartos, péssimos funcionários, péssimo serviço de quarto, péssimo café da manhã, tudo velho, tudo horrível ',neg
+
+'Nem pense em ficar neste hotel, Totalmente acabado, cimento do teto caido no chao do quarto, todo o quarto em péssimo estado ',neg
+
+'Estado nojento do ar condicionado do quarto com mofo, maçaneta da porta do quarto quebrada e o pior de todos ',neg
+
+'Esse hotel é horrível, Péssimo atendimento, péssima comida, as paredes parecem ser de papel pois se houve TUDO o que se falam nos outros apartamentos, Quarto velho com lençóis manchados e que mal cabem no colchão ',neg
+
+'  O pior atendimento que tive até hoje no Brasil, Aconselho mesmo que não reservem nem estejam neste Hotel ',neg
+
+'Atendimento péssimo, nenhuma consideração com o cliente, exigem pagamento adiantado, não prestam atendimento de qualidade prometido e não adianta solicitar saída antecipada, pois não retornam o valor pago ',neg
+
+' Foi um pesadelo, O hotel está em péssimas condições e é muito mal administrado, A recepção é grosseira e se esquiva de tudo ', neg
+
+'banheiro mofado,ralo quebrado,chuveiro desregulado,tv velha e sem som,vaso sanitario solto ',neg
+
+'o ar parece um helicoptero, faz tanto barulho que você é obrigado a desligar pra poder ouvir a tv ou até mesmo para dormir. Os elevadores não tem a luz indicativa do andar, a piscina sem comentários, mas o pior dos serviços estão nos próprios funcionários ',neg
+
+'Nunca vivi um pesadelo parecido. Ao chegar o cofre nao funcionou, a tv também nao. O ar condicionado faz tanta barulho que vc é obrigado a se fechar no banheiro, parece que vai decolar ',neg
+
+'Fui mal atendido ao chegar, fui mal atendido durante a estadia ',neg
+
+'O hotel é ruim no quesito limpeza e horrível no quesito segurança ',neg
+
+'Ambiente não recomendado para pessoas que exigem o mínimo da limpeza ',neg
+
+'Muito ruim,atendimento péssimo,os quartos são uma porcaria,com vazamento no banheiro que entra no quarto,maltratam pessoas ',neg
+
+'Odiei esse hotel, péssimo custo benefício, super caro, instalações horríveis ',neg
+
+'Hotel velho, com manutenção que deixa muito a desejar. Fiquei num quarto extremamente pequeno e apertado ',neg
+
+'Quarto péssimo, antigo, móveis com cheiro de mofo, banheiro pequeno, sem secador de cabelos, roupas de cama e toalhas encardidas ',neg
+
+' Piscina podre, suja, impraticavel ',neg
+
+'Acomodações antigas, paredes apresentavam pintura descascada, lençóis amarelados, um dos dois elevadores em manutenção ',neg
+
+
+'A equipe da recepção aqui foram o pior que já experimentei. Eles foram rudes, inúteis e desinteressada em quaisquer preocupações que tivemos ',neg
+
+'O nosso quarto nunca foi limpa uma vez. A comida era horrível ',neg
+
+'Instalações antigas, com barulho ',neg
+
+'os quartos são iguaizinhos, bem antigos, com móveis velhos e pesados e o carpete bem desgastado ',neg
+
+'O hotel é velho, fede mofo, a roupa de cama é simples ',neg
+
+'Hotel super mal cuidado, estrutura velha, paredes com morfo, constante falta de luz, ar condicionado quebrado, zoada de motores nos quartos da frente ',neg
+
+
+'A estrutura do hotel é péssima, o elevador fica travando, as paredes cheias de morfo, deixando muito a desejar ',neg
+
+
+'O hotel vive sem luz, o que obriga a subir vários andares de escada para tomar café ou sair do hotel, sem contar que acaba por faltar água, sem o funcionamento da bomba de recalque ',neg
+
+'hotel em si deixa muito a desejar. Paredes muito sujas, elevador quebrado ',neg
+
+
+'O hotel possui uma infra-estrutura excelente, com área de lazer completa, os apartamentos são confortáveis e limpos, o restaurante no almo é a la carte, as porções são individuais e pequenas. A praia particular é muito limpa ', pos
+
+
+'MARAVILHOOOOSOOOOOOOOOO Ambiente super aconchegante, recepção maravilhosa. Piscina, area verde, quartos super limpos e aconchegantes. Passei o feriado com meu namorado. Valeu apena demais, super indico! Assim que puder voltarei e me hospedarei novamente!', pos
+
+'café da manhã é modesto. A distância das praias e da Rua das Pedras é grande para ser caminhada, inclusive por questões de segurança. Para se hospedar é melhor estar com veículo próprio.' ,pos
+
+'Tivemos problema na reserva, havíamos reservado outro hotel da rede (Barra da Lagoa), mas no check-in, fomos informados que não haviam mais quartos disponíveis e fomos encaminhados para o Latitud, ficamos incomodados pois reservamos o Barra devido a localização (mais próximo a Rua das Pedras), e o Latitud fica mais distante em uma área mais erma. Mas por fim mesmo' ,pos
+
+'Excelente custo beneficio,bem localizado,local tranquilo ,atendimento bom, limpeza chama a atenção impecavel, os quartos são bem confortaveis e amplos, local perfeito para quem viaja com família , ponto negativo é não ter garagem.' ,pos
+
+'Fiquei com meu pai e foi tudo ótimo, café da manhã perfeito na medida, tudo muito limpo, tudo funcionava perfeitamente. Único ponto desfavorável é a entrada, pois não tem rampa é escada e até para passar com malas de rodinha não dá, por ser umas táboas separadas, o que dificulta passar com cadeiras de rodas ou carrinho de bebê.' ,pos
+
+'Ficamos neste hotel em abril de 2013, o Hotel de ótimo bom gosto, super agradável e quartos limpos, onde nos hospedamos em dois homens em um quarto e trez homens em outro quarto e todos ficamos bem confortáveis. ' ,pos
+
+'O quarto é bacana e funcional, o café da manhã é diversificado e a área da piscina é bem legal, apesar de pequena. Os funcionários são atenciosos e a relação custo beneficio é muito boa, além da proximidade com a rua das pedras ' ,pos
+
+'Olhando pelo lado bom: Tem um preço razoavelmente bom se efetuada a reserva diretamente pelo site, com café da manhã pago à parte), é próximo da rua das pedras(500mts), tem um ótimo atendimento( funcionários solicitos,atenciosos e simpáticos), o café da manhã é farto, fresco e tem uma ótima variedade de pães e frutas. Olhando pelo lado ruim sugestões...', pos
+
+
+'Gostei muito do hotel. Fomos bem recebidos e a limpeza do quarto foi impecável. O café da manhã é bem farto, mas quero apenas deixar registrado para que a gerência do hotel tome cuidados em relação ao armazenamento ou a padaria que fornece os pães pois encontrei um bichinho vivo dentro do pão folhado. Por sorte reparti o pão com Mais ',pos
+
+'Hotel com boa localização com bom atendimento fica pertinho da rua das pedras, da para ir a pé sim pois 400m não desanima ninguém e é bom para a saúde, eles deveriam melhorar o café da manhã que não e incluso em alguns pacotes e as vezes só ficamos sabendo disso quando efetuamos a compra falta um pouco mais de ', pos
+
+'Achei o hotel muito bom. Comprei numa promoção do hotel urbano. Ao contrário do que muitos disseram, na minha diária o café da manhã estava incluso e é muito bom, tem bastante variedade. É bem perto da rua das pedras, e o quarto é bem confortável. Depois de ler as criticas, fiquei um pouco receosa ao deixar a chave pra ', pos
+
+'Localizado próximo ao centro, por uma breve caminhada ou em torno de 5 minutos de carro, este hotel oferece conforto e ambiente calmo para quem deseja desfrutar de calma e tranquilidade em um balneário famoso pela agitação. O hotel oferece café da manhã, que não está incluido na diária, mas pode ser pago a parte com valor que me pareceu...', pos
+
+'Banheiros sujos, chuveiro que não funcionam, televisão só estava pegando TNT e Gloob, lençóis Imundos, café da manhã não incluso, um barulho a noite que fomos embora e ainda não conseguimos descobrir, muito diferente do que as fotos mostram. Para não dizer que só falei mal, toda a área externa é bem organizada e também uma boa localização. ', neg
+
+'Café da manhã MUITO fraco. Quartos mal limpos. Banheiro com sinais de mofo nas paredes. A limpeza parece ser apenas passar pano no chão. Reservamos três quartos pela internet, recebemos o e-mail de confirmação mas quando chegamos havia apenas 2 quartos reservados para nós. A área comum é bonita e a piscina é boa, mas o bar está abandonado. Atendimento ', neg
+
+'Bem só fui pois fiquei em outro hotel da rede e fui pessimamente atendido. Ganhei diárias neste hotel como forma de pedido de desculpas, mas ... Muito fraquinho. Café da manhã fraco, quarto sem mobília e sem conforto. Internet? Tentei pagar e não consegui acesso. Disse pagei mas não acessei. Lógico, não me cobraram. Muito ruim ', neg
+
+'nunca fui tao mal recebido em um hotel , péssimo atendimento, funcionário arrogante,ligamos efetuamos a reserva via e-mail e telefone , quando chegamos nao tinha a reserva feita , pareciamos que estavamos pedindo favor para nos hospedar, total falta de profissionalismo, o quarto é bom tem ar,tv e o banho é sem pressao d agua ', neg
+
+'Fiz a reserva na pousada paguei o valor integral e infelizmente aconteceu um imprevisto e não pude comparecer. solicitei com antecedente o cancelamento e me informaram que eu não terei o valor devolvido, que ficarei de crédito para uma outra estadia. Um absurdo o máximo que ele podem cobrar são 20% por taxas e só !!! Até hoje não recebi', neg
+
+'Os funcionários são extremamente apáticos, nunca estão dispostos a atender, parecem estar sempre cansados, o quarto é extremamente pequeno e desconfortável, o café da manhã custa R$15 ao dia por pessoa, não tem serviço de bar, não servem nenhum outro tipo de refeição ou aperitivo nem pagando por fora, enfim, eu não recomendaria, pior ainda se for para hospedar a', neg
+
+'Fiz uma reserva e só depois ví q n era reembolsável, até tudo ok, depois ví q n tinha café e me pareceu meio sem privacidade tb. Tive um problema e não pude ir, tentei altera a data da ida, mas eles foram irredutíveis, ate q autorizaram q eu trocasse minha ida de julho para setembro com acréscimo de 200', neg
+
+'Eu e meu namorado não indicamos, o hotel não é ruim, porém está mal administrado. Olha que já rodamos o mundo, mais nunca haviam mexido nas nossas coisas como mexeram nesse hotel. Saímos para ir a praia e quando voltamos as nossas malas estavam todas reviradas, se tivéssemos deixado algo de caro no quarto, com certeza seríamos furtados. Fiquei abismada ', neg
+
+'Fiz a reserva no outro hotel que eles tem próximo a rua das pedras com meu cartão inválido, porém avisei qdo fiz a reserva que chegaria la pras 3 da tarde pois meu voo chegaria ao Rio 13h e que o cartão não era válido e que pagaria em dinheiro, o atendente disse que tudo bem que anotaria, 2 dias Mais  ', neg
+
+'Esta foi uma experiência realmente terrível. Viajei com a família jovem e não recomendo a todos. Isso não é realmente um hotel, mais a posada. O quarto, instalações e piscina foram deixada suja. Havia muitos insetos, sem mesa e cadeiras no quarto e muito poucos no gramado. Todos eram de plástico. Frigorífico não frio, lâmpadas partidas. Um membro da equipe ',neg
+
+'Muito bem localizado, o hotel foi muito bem cuidado e continua parecendo novo, já estava precisando de um ibis em copacabana..execelente atendimento, quarto otimo, cafe da manha muito bom, pena que nao é incluso na diaria', pos
+
+'Hotel novo, perto de tudo, atendimento impecável e preço justo. Com certeza o melhor custo benefício do RJ. Localizado logo atrás do Copacabana Palace, está a duas quadras da praia e a uma quadra do metrô, de onde pode-se conhecer vários lugares gastando pouco. Para corridas de táxi a localização torna as viagens baratas também.', pos
+
+'Atendimento 100%, café da manhã muito bom e super completo, limpeza 100%, super educados, atenciosos, perto de tudo, ótima localização, almoço muito bom, tudo muito novo, valor acessível a classe media.', pos
+
+'Muito bom o hotél, novíssimo, limpo. A cama muito confortável, o tamanho do banheiro bom em relação a outros hotéis na cidade. Todos os funcionários super simpáticos. Ótima localização, apenas duas quadra da praia de copacabana. O café da manhã embora não esteja incluído no valor da diária, é agradável, vale a pena pagar. Classificaria o este Ibis mas doque Mais  ', pos
+
+
+'O novo IBIS COPACABANA é PERFEITO sob todos os aspectos e, sem dúvida, estabeleceu-se como a melhor relação custo-benefício da cidade, na sua categoria. Localização, serviço, limpeza, informações, café da manhã (não incluso, mas acessível e IMPERDÍVEL), tudo de excelência. Continuem assim. Muito obrigado! Ainda assim, por favor, não aumentem a diária: 329,00 aproximadamente 100 euros casal já é um ', pos
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+'Um hotel muito confortável, a duas quadras da praia, suites com cama queen, tv de lcd, wi-fi e todo o conforto para se passar ferias ou um fds. Recomendo pelo custo benefício pois a praia de Copacabana é uma das praias mais famosas do mundo ', pos
+
+'Hotel excelente em todos os sentidos. Excelente localização, custo-benefício, hospedagem, segurança, atendimento e limpeza. Duas quadras da praia de Copacabana, atrás do Copacabana Palace. Não há nada que o desabone ', pos
+
+'Hotel novíssimo. Atendimento e localização excelentes. Preço justo pela localização e qualidade do serviço. Muito próximo à praia de Copacabana e ao metrô. Caso volte ao RJ nesta área, certamente ficarei lá novamente.', pos
+
+'Além da localização, o atendimento é o grande diferencial do Ibis Copacabana. Acomodações muito confortáveis, preços justos, café da manhã bem servido e pela fácil localização você encontra tudo o que precisa nos arredores do hotel. Com certeza voltarei. ', pos
+
+'Bem próximo `a estação de metrô Cardeal Arcoverde e com dezenas de linhas de ônibus disponíveis a poucos passos, este hotel apresenta preços um pouco altos para a cadeia Ibis, mas ainda assim abaixo dos preços extorsivos que vem sendo cobrados no Rio de Janeiro. ', pos
+
+'O IBIS tem aquele padrão deles que segue o Brasil inteiro, o de Copacabana segue a regra. Para o RJ, o preço não é caro, mas para o que oferece, é caro sim. Mas enfim, quarto bom, atendimento bom, aquela média que faz com que tu não te incomode, mas se for viajar com antecedencia, dá para pegar algo melhor ', pos
+
+'Adorei o ibis Rj, bons serviços, bons qrtos, limpos e organizados... excelente localização e facil acesso a tudo! Concerteza volto a me hospedar la logo... Dou um ???? e super indico! Aco q ate março deste ano estarei hospedada la novamente ', pos
+
+'Excelente custo-benefício. Hotel bem localizado, novo, com o padrão Accor. Com certeza ficaria hospedado nele em uma nova viagem ao Rio de Janeiro. Rua silenciosa e limpeza dos quartos excelente ', pos
+
+'dequado aos preços praticados no Rio de Janeiro, boa localização, limpeza e atendimento muito bons. Padrão superior a muitos Ibis. Deveriam porém reconhecer a categoria do cliente no caso era Platinum e já oferecer o que tem direito late check out.', pos
+
+'Muito bem localizado (próximo do Copacabana Palace), o hotel foi muito bem cuidado e continua parecendo novo. Os problemas da reserva do site da Accor  acabaram superados pela atenção dos funcionários.', pos
+
+'Fique hospedada e eu sempre opto pelo Ibis porque sei o que vou encontrar, boa localização se seus planos são de conhecer a cidade, se for para praia optaria em ficar em ipanema. No nosso caso que fomos para o centro da cidade foi ótimo', pos
+
+'Boa localização, ambiente limpo e organizado, bom café da manhã, boas instalações com wifi funcionando, com exceção do pirmeiro dia em que alegaram problemas da operadora. Cama confortável, banheiro adequado.', pos
+
+'Hotel com ótima localização, quarto muito limpo com bom espaço e muito silencioso, bem diferente do hotel que me hospedei um ano atrás e fica em frente a este Ibis. Próximo ao metro, a duas quadras do Copacabana Palace e tem ótimos restaurantes que você pode ir a pé mesmo a noite, achamos a região bem segura. O café da...', pos
+
+'Cheguei tarde da viagem e fui fazer meu check in e fui recebida por uma pessoa muito simpática, ótimo atendimento. Também i hotel parece uma extensão da casa da gente, sem serem muito formais. Só não avaliei o atendimento como excelente pois ficaram de levar um adaptador para mim e não levaram e tive que pedir denovo.', pos
+
+'Bom hotel, padrão Ibis, com boa localização em Copa, perto do metrô, de restaurantes tradicionais e da praia. Não tem vista e o estacionamento é caro, mas compensa. Hotel novo, cama confortável e bom café (pago a parte).', pos
+
+'Todos hotéis íbis são muito bons, quartos aconchegantes e serviço de quarto muito bom. Localização muito boa, com acesso rápido e prático para qualquer local do rio. Localizado próximo ao metro, facilitando ainda mais o passeio pela zona sul do rio. Recomendo demais o local.', pos
+
+
+'Hotel localizado atrás do Copacaba Palace, 3 quadras da praia, próximo de bons restaurantes e barzinhos. Preço justo, bom atendimento, perto da praia, limpo e novo, um diferencial na região. Melhorar um pouco o café da manhã, somente.', pos
+
+'Um bom hotel, tudo novo, sem muito luxo, e caro, o valor que se paga nesse hotel, coresponde a localização que voce está, pois está a apenas uma quadra da praia de Copacabana, é um bom hotel, com quartos limpos, bom café da manha.', pos
+
+'Bom hotel, com localização boa pois é próximo (200mts) da praia e de metrô. Quartos muito bons e bem limpos. O único porém do hotel é o preço, que particularmente achei muito caro para um hotel que não oferece serviço de quarto (o que me surpreendeu, dado que é um hotel dito 4 estrelas). Um ponto positivo é que o', pos
+
+'É um hotel em excelente localização, o serviço é muito bom, sempre estão dispostos a solucionar de imediato os problemas quando surgem, mas no geral, vale muito a pena se hospedar no Ibis Copacabana', pos
+
+'A única coisa bem ruim é não ter estacionamento e nenhuma opção razoável na região para estacionar. O estacionamento em frente ao hotel não aceita veículos automáticos. Se o hotel tivesse um estacionamento seria perfeito. ', pos
+
+'O único problema que tive foi em relação ao café da manhã, que no check in o atendente nos informou o horário dando a entender que estava incluso na diária e na hora do check out tivemos que agar. Foi desagradável, uma despesa que não estávamos esperando.', pos
+
+'Há um quadra da praia mais famosa do país, pertinho do Copacabana Palace, local privilegiado, estação de metrô há uma quadra, várias estações do Bike Rio por perto. Padrão Ibis de conforto e serviço encontrado em todos os hotéis da rede, mas este com certeza tem a localização como grande diferencial. Adorei. ', pos
+
+'Hotel confortável e limpo. Funcionários sempre dispostos a ajudar. Café da manhã muito simples, pelo preço deveria oferecer mais opções. O ponto alto é a localização, muito perto da praia e com muitas opções de transporte. ', pos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'Hotel novo, serviço de limpeza muito bom, a três quadras da praia. Quartos padrão Ibis. Ótimo isolamento acústico. Ótima localização, próximo ao Copacabana Palace e Estação de metrô. Internet funciona muito bem.', pos
+
+'Hotel bem localizado, boa estrutura, seguindo o padrão Ibis, com ótimo custo benefício, quartos confortáveis, e bom atendimento dos funcionários. Vale ressaltar que o café da manhã não é gratuito, caso desejar é necessário que seja pago a parte ', pos
+
+'foi muito bom meus dias no íbis Copacabana, um hotel muito bem localizado e de fácil acesso tanto para o resto da zona sul como para o centro e aeroporto Santos Dumont , e para quem gosta é perto do Copacabana palace.', pos
+
+'Bom serviços e otima qualidade em todos os aspectos. Só uma observação quando fiz a reserva poderia ficar por mais alguns dias más por falta de conhecimento não fiz a opção, mas no ano que vem vou prolongar mais minha visita, ok.', pos
+
+'Igual aos demais hotéis da rede. Boa localização próxima de algumas estações de Metro e locais para alimentação. Fácil acesso. Vale a pena pela localização e acessibilidade. Pecam por não aceitar antecipar checkin. Retornarei se necessário.', pos
+
+'igual as demais da rede, o ponto super positivo é a localização, pertinho da praia e com preço mais em conta do que os famosos... acho a desvantagem não ter vista mar , mas no geral é um bom hotel', pos
+
+'Bom, as hospedagens no Rio são bem salgadas e uma boa opção para pagar menos é Ibis Copacabana. A localização é privilegiada, próxima ao Copacabana Palace. O café da manhã deve ser pago. Os quartos são bem limpos e conservados ',pos
+
+'Boa localização. Do aeroporto até o hotel utilizamos o onibus frescão e descemos na frente do Copacabana Palace. Andamos apenas 2 quadras para chegar no Ibis. Facil acesso para onibus comum. Fomos ao Pão de açucar de onibus comum pedindo informação, sem problemas. O hotel é novo, atendimento cordial, quarto bem confortável. A noite, nas imediações do hotel a pé', pos
+
+'Muito bem localizado (próximo do Copacabana Palace), o hotel foi muito bem cuidado e continua parecendo novo. Os problemas da reserva do site da Accor acabaram superados pela atenção dos funcionários.', pos
+
+'É a segunda vez que me hospedo neste hotel e mais uma vez fui muito bem atendido. O atendimento na chegada foi rápido e eficiente o quarto estava limpo e arrumado café da manhã na medida certa perfeito.', pos
+
+'É a segunda vez que me hospedo neste hotel e mais uma vez fui muito bem atendido. O atendimento na chegada foi rápido e eficiente o quarto estava limpo e arrumado café da manhã na medida certa perfeito.', pos
+
+'No Rio tudo é muito caro. Este hotel é uma boa opção barata para desfrutar das belezas da cidade maravilhosa. Com bom atendimento e boa hospedabilidade o hotel é uma opção econômica para desfrutar o rio. O café é pago e os quartos bem limpos.', pos
+
+'Passei o ultimo final de semana no Ibis de Copacabana. Hotel moderno, construído ha menos de três anos, ótimo banheiro. Não possui camas de solteiro e não permitem hospedes crianças. Localização ótima', pos
+
+'Todas as instalações do hotel são novas. O hotel não possui área de lazer. Quarto limpo e com espaço razoável. Banheiro também. Entretanto, dois pontos deixaram muito a desejar. Tivemos problemas com o quarto imediatamente acima. As pisadas faziam muito barulho e as arrumadeiras de manhã mais ainda. Não conseguimos dormir direito depois das 8:30. ', pos
+
+'A localização é sem dúvida o melhor atributo desse hotel, situado bem pertinho da praia de copacabana. O atendimento e a estrutura seguem o padrão Ibis, sem grandes diferenciais de conforto, porém com quartos limpos e razoáveis.', pos
+
+'Perto do Metro, e de alugueis de bicicleta do bike rio. Ao lado do copacabana palace. Hotel novo, padrao ibis. aendimeno muito bom. duas quadras da praia. os restaurantes en volta nao sao muito bons, mas vale a pena se perder pelas ruas do bairro', pos
+
+'Estive hospedado no ibis Copacabana e fiquei muito satisfeito, o atendimento é muito cordial, os funcionários simpáticos, o quarto é simples, mas a limpeza é muito bem feita. O visual da janela do quarto não é.bacana porque você dá de cara com um outro hotel bem de frente, então é melhor permanecer com as cortinas fechadas. O café da manhã', pos
+
+'Tem ótima localização, de fácil acesso, próximo a praia de Copacabana e restaurantes e bares. Além de ficar perto da estação de metrô. Tem bom atendimento, quartos limpos e bem arrumados, seguindo o padrão Ibis.', pos
+
+'O bom de ficar nos hotéis desta rede é que o hóspede não tem surpresas. Todos eles são muito semelhantes no estilo, na decoração e, principalmente, no serviço. O hotel de Copacabana não é diferente, com a vantagem de ser uma construção novíssima. Fica numa rua arborizada, próxima ao metrô e e também da praia. Excelente custo-benefício ', pos
+
+'Localização privilegiada, instalações novas, bom café da manhã e atendimento cortês. Poderia ter um andar para fumantes como era antigamente. O preço está acima do cobrado em outras cidades. TV com poucas opções ', pos
+
+'O Hotel fica em uma ruazinha simpatica, arborizada, calma e bem proxima da praia, é só colocar a bermuda e sair. A noite tambem é proximo de tudo, restaurantes da beira mar. Cafe da manha o de sempre dá para se alimentar.Os quartos igualmente od dos outros IBIS so que este esta bem novinho.', pos
+
+'Próximo ao Metrô estação Arcoverde, varios ponto de ônibus e 500 metros da praia e das principais ruas com lojinhas, restaurantes para todos os gostos. Os quartos são limpos e os serviços de recepção, restaurante, café são ótimos ', pos
+
+'Próximo ao Metrô estação Arcoverde, varios ponto de ônibus e 500 metros da praia e das principais ruas com lojinhas, restaurantes para todos os gostos. Os quartos são limpos e os serviços de recepção, restaurante, café são ótimos ',pos
+
+'Estive no Ibis Copacabana a trabalho e achei as instalações muito boas, banheiro limpo e bem mantido, cama espaçosa. Apenas o wake up call que eu agendei através da recepção e não foi feito. O Café da manhã não é muito elaborado, mas tem uma variedade boa', pos
+
+'Boa localização, acomodação confortável, café da manhã pode ser melhor pelo custo que é pago à parte, bom atendimento, tem programa de fidelidade, limpo o hotel, tv a cabo, quarto bem compacto, cofre.', pos
+
+'Quarto agradável, pequeno mas acolhedor, serviço honesto, atendimento simpático, café da manhã muito bom, e , o melhor é que o calçadão de Copacabana e o mar ficam logo ali. O hotel fica bem perto do Copacabana Palace. Não se esqueça de abastecer o frigobar.', pos
+
+'Hotel com boa localização, porém não tão perto da praia, bem funcional, com instalações novas, café da manhã básico, pago por fora da diária. Funcionários bem receptivos e prestativos. Hotel bem funcional, ótimo para viagens breves. Indico sim.', pos
+
+'O Ibis Copacabana apresenta-se como boa opçao de hotel no Rio pela localizaçao, preço e principalmente por nao ser velho, deteriorado e cheirando a morfo como a grande maioria de hoteis da orla do Rio. Fica a duas quadras da Av Atlantica.', pos
+
+'Este íbis esta entre os melhores que estive, junta ótimo preco com ótima localização, no mais esta dentro do padra íbis de atendimento e quarto, Café da manha gostoso, embora seja pago a parte e o melhor o hotel é novo e muito limpo.', pos
+
+'Hotel novo e bem localizado, otimo custo beneficio, proximo a estação do metro, o cafe da manha nao esta incluido na diaria, quarto com frigobar,  tv de LCD, com FRIGOGAR, padrao ibis, bem confortavel', pos
+
+'Uma excelente opção para quem deseja se hospedar no Rio. O hotel fica próximo a praia de Copacabana e próximo a estação de metrô. O hotel está dentro do padrão ibis com quarto confortável e bom custo benefício. O café da manhã não está incluso na diária do hotel.', pos
+
+'Hotel com boa localização, dista 2 quadras praia de Copacabana e próximo também ao metrô. Bom custo benefício, o que é importante, pois os hotéis do Rio de Janeiro são muito caros. Os quartos são relativamente espaçosos, mas confortáveis. Café da manhã razoável. Aconselho tomar café da manhã em uma das padarias próximas, que são ótimas. Única ressalva é o', pos
+
+'Muito bom, eh um verdadeiro achado um hotel em copacabana que não tenha cheiro de mofo, e esse ibis eh novinho em folha, o serviço eh padrão ibis mas o preço está bem acima do praticado em outros estabelecimentos da franquia.', pos
+
+'Hotel novo. Excelente localização. Cafe de manhã básico, não incluso na diaria. Quarto silencioso, piso em madeira, padrão da rede Ibis. Hotel oferece internet gratis e computador na recepeção, nos quartos wifi. Ótima escolha para quem vai visitar as belezas do Rio e precisar do hotel apenas para descansar.', pos
+
+'Hotel muito bem localizado, bom atendimento. Infelizmente os quartos não são muito limpos e o café da manha é muito simples além de não estar incluido na diária do hotel. Tem estacionamento, pago, mas que não aceita carro automatico.', pos
+
+'O Hotel tem uma ótima localização e atendimento. Os quartos são novos e bem conservados e limpos. Tem um bom café da manhã. Esta localizado em boa área no começo do bairro de Copacabana. Tem estacionamento conveniado na mesma rua quase em frente ao hotel.', pos
+
+'Local ideal para ficar em Copacabana. Destinados àqueles que não fazem questão de luxo, afinal quem viaja a turismo, anda o dia todo e quer um lugar limpo, confortável e silencioso para descansar para o próximo dia esse é o hotel ideal.', pos
+
+'a melhor coisa que tem esse hotel é a localizacao esta perto da praia, pode se locomover a pe! o cafe da manha nao esta incluido na diaria! isso para mim nao esta bem! ja que estamos pagando por um serviço que poderia incluir ', pos
+
+'Gostei muito do hotel e do pessoal. O preço foi um pouco alto, mas globalmente fiquei satisfeito. Num dos dias acabaram arrumando o meu quarto já ás 5 da tarde, e isso foi a única coisa que correu menos bem ', pos
+
+'Escolher um hotel de rede tem a vantagem de não ter surpresas. O Íbis Copacabana é assim mesmo. É um hotel novinho. Os funcionários são amáveis. Muito bem localizado. Perto do metrõ. Quase em frente tem uma padaria. Ótima opção pra o café da manhã. Recomendo ', pos
+
+
+'O hotel Ibis Copacabana é recém inaugurado e tem uma rouparia superior à media da rede.A cama já é do novo padrão Ibis:bem confortável!O banheiro tem ótima ducha.O ar condicionado é silencioso e eficiente.Prefira andar alto são 10 andares. Localização excelente há apenas uma quadra do lendário Copacabana e proximo a praia e bons restaurantes ', pos
+
+'Localização excelente, bem próximo do metro, da praia, restaurantes e de fácil acesso para vários lugares. Os quartos são bem limpos e confortáveis. Café da manhã é pago a parte mas é farto e variado. Funcionários são bem atenciosos e cordiais ', pos
+
+'Atendimento feito por recepcionistas estrangeiros durante o check in. Falando português fluente e extremamente atenciosos. Quartos pequenos mas limpos e sem nenhuma reclamação. Café da manhã bom, com variedades básicas (sem exageros mas suficiente!). Não há serviço de quarto, portanto traga bebidas e snacks por conta ou peça no bar do térreo ', pos
+
+'Estrutura excelente! Hotel perfeito para quem quer descansar, com bom serviço à disposição. Piscina, restaurante e quarto ótimos! Equipe super competente, não nos faltou nada. Não é muito em conta, mas vale a pena o investimento ', pos
+
+'Excelente localização, pois fica há poucas quadras da praia. Um dos hotéis mais baratos de Copacabana. Hotel novíssimo, com quartos super limpos, aconchegantes e com uma vista linda. Aproveite e venha passar o final de ano com os amigos e familiares ', pos
+
+
+' Resort é maravilhoso, com instalaçoes novas, quartos amplos e bem decorados.A piscina é imensa e circunda todo o hotel, a praia é privativa e conta com um bom servico na areia.As refeiçoes ficam um pouco a desejar, mas no geral satisfazem bem ', pos
+
+'O hotel possui uma programação diária muito boa e animada, o que não deixa as estadias se tornarem monótonas. O restaurante é bom, mas não atinge todas as expectativas. A área de lazer, piscinas, boliche, golf, são ótimos, vale a pena ', pos
+
+'Excelente Hotel. Na beira da praia. Quartos grandes. Três ótimas piscinas. Pista de boliche, minigolf. Restaurante muito bom. Minha filha adorou. Voltarei mais vezes neste resort. Fortemente ', pos
+
+'Além de estar localizado na cidade de Búzios é um ótimo pousada para se hospedar e curtir a cidade. Muito grande o local com uma piscina enorme também, prepare-se para andar (se preferir existem carrinhos de golf para o translado interno do hotel). Possui quadras de tenis, futebol e opções de arco e flecha e alpinismo. Não pratiquei, mas também existe um trapézio no local. Deve ser bacana. O café era bom e tinha uma janta melhor ainda. A cada noite que eu estive no hotel tinha uma atração diferente para curtir próximo ao restaurante. O hotel estava vazio, mas as festas eram animadas. Conta com serviço de animadores e ainda tem um salão de jogos e academia. Hotel completo Recomendo.', pos
+
+'Fiquei hospedada neste hotel a trabalho. Ele tem um atendimento excelente, alimentacao, eventos, e é excelente para a familia que deseja sair de férias pois pode aproveitar para conhecer o lugar que é um paraíso! Faz parte de uma tranquila ilha de pescadores, tem o charme e a badalacao da riviera francesa.', pos
+
+'Não é tão pertinho do centro de Búzios, mas não foi difícil chegar, pois há algumas placas informativas no trajeto e o melhor de tudo, à noite é disponibilizado aos hospedes um ônibus que segue para o centro de Búzios e o mesmo ônibus marca o horário da volta, embora não seja muito o tempo disponibilizado para o passeio noturno, essa prática é ideal para quem quer beber, uma vez que não é preciso se preocupar com a volta. Grande sacada do resort A organização é impecável, considerando a limpeza,os funcionários, os estacionamento, o entretenimento e outros, O café da manhã é farto e muito bem preparado. As piscinas com animadores se torna uma atração a parte. Não é barato, mas é justo pelo que oferece ', pos
+
+'Lindo lugar, hotel muito charmoso, tudo muito bom. Ficaria mais alguns dias se não fosse a chuva, pq amei tudo, desde a praia particular as piscinas, enfim espero voltar mais vezes As crianças amaram ', pos
+
+'A rede blue tree é excelente e esse de Búzios não poderia ser diferente. Com muitos animadores para a criançada e até para os adultos o resort deixa os pais bem à vontade para descansar enquanto os pequenos brincam com todo cuidado. Uma praia privativa também está entre as atrações deste resort. Poderia melhorar a comida, pois tem pouca variedade. Mas isso compensa com os vários restaurantes de Búzios, para quem não quer apenas ficar no resort ', pos
+
+'Ja fui duas vezes e recomendo gosto de tudo dos quartos da animaçao tudo muito bom meus filhos se divertem o dia inteiro. Os animadores sao otimos todos os dias eles animam de dia e a noite sempre tem shows ', pos
+
+
+'Acabei de chegar de viajem, e fui meio preocupado, pois depois de alguns comentários lidos aqui, fiquei preocupado, e sinceramente fiquei muito surpreso, um lugar é ótimo, atendimento perfeito, minha filha de 5 anos ficou super feliz com os animadores, eles ficam o dia todo com atividades para as crianças, fazem pizzas, atividades na praia, atividades na piscina, sempre muito bem assistidos, o atendimento e a limpeza dos quartos é ótima. Sempre tem shows muitos animados todas as noites. Pois então esqueça os comentários ruins, pois até no paraíso tem gente que vai reclamar.Quase me esqueci, o café da manhã é muito bem servido e com tudo que você possa imaginar. No caso do almoço e jantar, financeiramente vale mais a pena ir a rua das pedras, pois fica em 60 reais por pessoa, cada jantar ', pos
+
+'Ótimo local Profissionais bem treinados e capacitados, instalações confortáveis, ótimos bares e piscinas. Ambiente para ir com amigos e ou família ', pos
+
+'Resort perfeito, funcionários profissionais, teve teatro e nós participamos, área do resort é muito bom. a unica coisa que não gostei foi o estacionamento sem cobertura e nenhuma arvore para uma sombrinha. Preço em relação Praia limpa maravilhosa, peguei vários jacarés. Sem contar que estávamos em Búzios, hein ', pos
+
+'Fui passar um fim de semana com minha esposa e foi sensacional A piscina muito boa, a praia está a menos de 10 metros da piscina, tudo integrado! O café da manhã espetacular! ótimo para quem tem filhos pequenos também, tem atividades o dia inteiro na piscina, com área reservada específica para os mais baixinhos. Praia de Tucuns, praticamente virgem. é estar no paraíso, à 10 minutos de Búzios O hotel oferece ainda transfer para a Rua das Pedras ', pos
+
+'Hotel muito bonito. Quartos grandes, modernos e limpos. Piscina linda, mas poderia ser levemente aquecida.Além disso, é funda para as crianças.Venta muito, e faz frio, mesmo estando no verão. A comida não oferece muitas opções. Nada além do básico. Fica em frente ao mar. Ótimo para viajar em família ou com a pessoa amada ', pos
+
+'Um bom lugar para relaxar, se divertir e sair da rotina, além de ser muito bonito. Gostei muito da área de lazer, que é boa para crianças também, gostaria de ter tido mais tempo para aproveitar. Com certeza voltarei. se hospedou em Janeiro 2013, viajou com a família ', pos
+
+'Viagem a buzios num fim de semana, hotel, muito bom, somente na chegada que o chekin muito demorado, fila enorme, deveriam se preparar mais para isso, deve ter alguma maneira, quarto muito bom, amplo, piscinas maravilhosas, localização muito boa tambem, lugar afastado, otimo para um resort ', pos
+'Amei os restaurantes, as áreas de lazer e jogos, as atividades com recreadores e as piscinas. Nós ficamos só dois dias mas aproveitamos muito. Todas as refeições contam com variedade e excelentes pratos quentes e frios, além de sobremesas muito saborosas. O atendimento foi acima da média e o que mais me deixou tranquila foi a exigência do hotel em requerer uma documentação das crianças que levávamos, coisa que nem todos os hotéis exigem. Ficamos num quarto muito grande, a limpeza foi num nível muito satisfatório, e voltaremos a búzios para ficar lá novamente. ', pos
+
+
+'Bem vindo ao resort que reúne a badalação de Búzios com a assinatura Blue Tree. Localizado na paradisíaca praia de Tucuns, de frente para o mar, o hotel têm uma das melhores infraestruturas de lazer do país, incluindo boliche, pista de skate, trapézio e uma piscina enorme e irresistível. E você ainda vai curtir todo o charme rústico do balneário. Estamos esperando por voce ', pos
+
+'Apesar de ser mais afastado da cidade é uma ótima opção de hospedagem na cidade.O resort fica muito perto da praia de tucuns em Búzios.O atendimento é de primeira e a comida é ótima . Além de muitas opções de entretenimento no próprio resort. Dica de quarto O padrão de quartos é o mesmo.', pos
+
+
+'maior roubada O cheiro de mofo do quarto é asfixiante, não bastasse isso essa conversa que fica a 10 minutos de caminhada depende do quanto voce gosta ou quer andar , voltamos a noite para a pousada com um medo danado da rua que é escura demais  Localização péssima . Funcionários até tentam ser simpáticos, o cara do bar ', neg
+
+
+'A pousada e uma decepção, quando chegamos em Búzios por volta das 22:00 hrs.O recepcionista não sabia nos dar a direção.Em Búzios o GPS não funciona e mesmo ele sabendo disso não nos ajudou. Chegando na pousada, fomos para o quarto o vidro do basculante do banheiro estava quebrado e assim o cheiro que vinha de fora além dos mosquitos. ', neg
+
+'Não dão a mínima, confirmaram nossa reserva por email e quando chegamos nos avisaram que desconheciam nossa reserva, o quarto é uma porcaria, tudo é nogento  ', neg
+
+'primeiro dia da chegada não encontraram nossa reserva, tivemos que entrar no computador da própria pousada, localizar o email enviado por eles para provar que tinhamos a reserva porém, como o hotel estada lotado, graças a deus conseguiram transferir para a pousada biblos excelente onde passamos o primeiro dia noite. infelizmente, no dia seguinte tivemos que voltar para a pousada dos ', neg
+
+'Passei 3 dias na pousada e só tive decepções Cheguei na pousada na quinta feira e descobri que durante a semana, a administração aluga a piscina para aula de natação infantil. Os funcionários não procuram sem simpáticos, muito menos solícitos. O site do hotel engana, pois mostra apenas a parte nova do hotel. Fiquei na parte antiga e o banheiro tinha ', neg
+
+
+'Hotel apenas está instalado em praia paradisíaca, têm estrutura adequada ao passeio praia. Nos pareceu que precisará treinar funcionários, garçons, se pretendem ainda ser referência em Porto de Galinhas. Retornamos com a sensação de que não valeu o preço ', neg
+
+'Acho ideal dividir alegrias e decepções com todos os internautas que frequentam um dos maiores sites de viagens do mundo, nós consumidores, temos o direito de nos manisfestar sobre tudo que adquirimos para consumo, sejamos realistas e nunca devemos adotar o simples ditado do brasileiro que cita  Brasil é assim mesmo , não, Brasil não é assim e espero. ', neg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'Pior hotel que ja me hospedei. O hotel nao se preocupa com detalhes da estadio dos hospedes. Chegamos no dia 3 e fomos encaminhados a um quarto que a vista era a obra que esta sendo feita no hotel. Neste momento começou o aborrecimento. Em plenas ferias, em uma cidade longe da cidade, do barulho de tudo fomos colocados de. ', neg
+
+'Ficamos no hotel no mês de junho, uma época em q so se fala em festa de são João. O hotel é mto distante de td Ruas sem asfalto até chegar no hotel, ja te deixa com a impressão de q esta no interior e nao em Porto de galinhas Quartos com cheiro de bolor comida ruim e o restaurante. ', neg
+
+'Caros visitantes do trip advisor: leiam com atenção todas as informações descritas aqui por mim, pois não tenho a intenção neste relato de interferir na escolha de ninguém Bom, pontos positivos deste hotel: Ele tem uma área externa muito bem cuidada, fica de frente para a praia do Cupe, mobília de praia e de piscina são boas, há redes debaixo. ', neg
+
+'Voltei ao Village depois de três anos e o que posso dizer é que foi uma grande decepção. O hotel caiu demais em qualidade, tivemos problemas com o quarto que estava freqüentemente mal arrumado, o banheiro sempre com um cheiro horrível de esgoto, os funcionários pouco gentis. Claramente o hotel tem pecado em fazer a sua manutenção e o treinamento ', neg
+
+'Do mais simples petisco, salada, buffet ou prato à la carte. Tudo ruim Não conseguem elaborar a mais simples receita. Inexperiência e desconhecimento sobre a formulação da receita e do prato apresentado ao cliente. Mas o preço como se fosse de bom padrão. Até a caipirinha ou caipirosca, com frutas boas, deixa a desejar. Elaborada como se fosse um refresco. Bebida.', neg
+
+'Fiquei 7 dias no Village com a minha família agora em novembro de 2011. Achei a estrutura do Village boa, principalmente as piscinas e quartos. No entanto achei que falta treinamento para alguns funcionários: de maneira geral são simpáticos, mas alguns são muito mal educados talvez estejam descontentes com o trabalho. O ponto mais fraco do hotel com certeza é ', neg
+
+'Eu e meu marido ficamos hospedados no Village por 4 dias e fomos assaltados caminhando pela praia bem próximo ao hotel sem nem sequer termos sido avisados de que era perigoso caminhar por ali, o que para nós, significou falta de cuidado e respeito a nós como hóspedes. Quanto à acomodação, o quarto era razoavelmente confortável mas o ralo do ', pos
+
+'Eu e meu marido estivemos neste Hotel em novembro e detestamos nossa estadia. O nosso apartamento térreo em frente à piscina era muito velho e barulhento. Tentamos reclamar e pedimos que mudassem nosso quarto, mas foi perda de tempo. Fomos muito mal atendidos, solenemente ignorados. Apenas diziam que o hotel estava lotado e não poderiam nos mudar de quarto, ', neg
+
+'O dono faz do hotel sua area de lazer particular - durante 2 dias não tive acesso a parte da area de lazer por causa de eventos particulares do dono. O atendimento ao dono era prioridade, deixando os hospedes PAGANTES a propria sorte. Reclamações não eram atendidas, tudo era em função dos donos. Acho que paguei para ficar num hotel. ', neg
+
+'Hotel simples, café da manhã razoável. Apartamento largado, espelho do quarto rachado, colado com fita crepe para tentar evitar piorar a situação, ar condicionado sem funcionar, banheiro com cheiro ruim e ventilação precária. Camareiras sentadas no chão, no pavimento do apartamento, sem sapatos e conversando, aliás, não fizeram menção de levantar ao nos verem saindo do elevador, continuaram como. ', neg
+
+'Ótima localização, bom café da manhã, uma boa equipe e muito barato. Hotel muito antigo e todos os quartos tem fumaça Melhor trazer um desinfetante para o quarto. Eu carrego uma vela comigo há anos, ela salvou o meu nariz. Você dificilmente pode usar os chuveiros porque eles foram adicionados às banheiras antigas. ', neg
+
+'O hotel é muito bem localizado,no limite entre Ipanema e Copacabana, proximo ao Arpoador. Possui uma varando com piscina no ultimo andar com uma vista razoavel da cidade. Os quartos sao amplos. Acredito ser um hotel antigo que esta sendo reformado. Desvantages:  nao tem ventilação no hall dos andares.  no quarto que fiquei o teto do banheiro nao. ', neg
+
+'9 Membros da família em três salas para três noites. Havia uma mistura se com a reserva inicial it.com de reserva que foi o nosso erro fair o suficiente. Eles foram capazes de encontrar-nos mais quatro quartos- em um preço mais elevado, Mas o que me incomodou foi a atitude de um dos muito condescendente do pessoal da recepção ', neg
+
+'Como um hotel, esta é uma operação de ossos bastante nua. Os quartos variam de tamanho pequeno armário de mal aceitável. Não há nenhum carpete em qualquer um dos quartos, assim é muito frio. Se o seu vizinho tem o televisor ou está tendo uma conversa você vai ouvilo. Se você está no lado da frente do hotel você vai. ', neg
+
+'Convenientemente localizado, mas muito caro para o que oferece: pequeno, abafado, run down quartos, inúteis pessoal, abaixo da média café da manhã, dificilmente trabalhar com ar-condicionado. Não terríveis, apenas caro. Uma armadilha clássico de turismo.', neg
+
+
+'I anteriormente ficamos no Hotel Debret na Copa e(s) os quartos com vista nenhuma(em 2009) e pagos cerca de $65 por noite. O Atlantis Copacabana não oferece vistas e quartos que parecem foram decorados da IKEA. Enquanto o serviço é excelente, os quartos são barato decorado e o banheiro no meu quarto estava em necessidade ', neg
+
+
+'Há algumas coisas boas dizer sobre esse hotel, em especial a simpática equipe, o e rápido à Internet, e o bom tamanho dos quartos. No entanto no mais de 130 Euros por quarto (para minha reserva), está a apenas terrivelmente as. Os quartos são realmente prédio vermelho desbotado com cansados, barato e sem sentido móveis, rústico e adornos ACs, descobertas. ', neg
+
+'Ficamos aqui 4 noites em Agosto de 2011. Primeira vez no Rio e a localização do hotel era importante para nós. O hotel está localizado numa área tranquila e segura, muito perto de todas as praias (5 min). Além da localização, fizemos acho que o hotel foi vale dinheiro. O quarto era ok, o banheiro pequeno. A área de café da manhã. ', neg
+
+'Hospedei me neste hotel que a primeira vista parece bom, porém quando retornei ao mesmo à noite, depois de passar o dia inteiro na rua, louca por um banho e dormir eis a surpresa, meu quarto o 1103 estava sem uma gota de água!!! Nunca passei uma noite tão horrivel, fora o cheiro nojento de esgoto. Não recomendo mesmo. ', neg
+
+'O hotel oferece conforto razoável, boa localização e bom café da manhã. No entanto o mal cheiro de esgoto nos quartos é insuportável! Péssimo custo benefício, pois a tarifa oferecida é alta frente ao incomodo do mal cheiro dos quartos. Não recomendo, não retorno.', neg
+
+'Apesar do hotel está bem localizada, resto é hotel unrespectable, clientes tipo de máquina de dinheiro que invoca cuidado sobre eles! Eles tentam vender quartos de categoria superior, que eu podia entender  Mas o pior é, uma mulher no lobby, agressivo, limpo, . Ela fala inglês, mas prefere dizer-me que eu tinha de falar em Português no Brasil ', neg
+
+'Eu e meu amigo reservado o quarto superior vista mar no piso 11. O quarto era básico e no primeiro, ficamos felizes com ele. O segundo dia, fomos atingidos pela chuva, o chão da sala se encheu de água devido a lacunas na janela, além disso o vento estava fazendo as janelas agitar bastante alto. Quando perguntamos à recepção do. ', neg
+
+'Não reservar este hotel se você está recebendo um quarto mais de 100 USD. Embora a localização do hotel é bom, o quarto e fornecedor eram terríveis e não vale a pena pagar mais de 100 USD. Chegou a 1hr de hotel mais cedo (depois de muito 10hr voo) antes da 2h tempo checkin e a recepção nos disse para. ', neg
+
+'Quando fizemos o check out, meu marido estava pagando pelo cartão. Ele é o seu PIN e a recepcionista perguntou-lhe para colocar o seu PIN novamente após alguns minutos! Eu disse que queria um recibo dizendo que a operação anterior não passar, ele disse que não podia dar-me um. Eu disse que ele deveria dar-me um, caso contrário ele poderia ser. ', neg
+
+'Depois de olhar para alguns destes comentários im chocado com o que as pessoas estão a aceitar como valor para dinheiro ... Só cheguei de volta da América do sul e o quarto de hotel foi de longe o pior e mais caros, reservei 4 noites através booking.com devido a sua localização que é bom e as figuras e comentários. ', neg
+
+'Quarto estava sujo , lençóis eram sujos , centenas de formigas no chuveiro (quando reclamamos que houve centenas de insetos no chuveiro  foi nos dito que eles são apenas formigas ) teve 50 minutos para utilizar o elevador de manhã  não ficaria novamente!', neg
+
+'Eu li alguns comentários que referiu que os quartos cheirava mal, mas havia alguns comentários que disse o problema foi cuidado - não tenha sido. Ao entrar no quarto, a primeira coisa que eu notei foi o cheiro. Eu cheirava um esgoto. Eu abrimos a janela para o ar do lugar e que ajudou um pouco, mas fez o quarto. ', neg
+
+'1. Café da manhã péssimo. Pouquíssimas opções e ambiente desagradável. 2. Limpeza péssima. Tinha uma cueca atrás do criado mudo. Deve estar la até agora. Lençol e toalhas com manchas. 3. Elevador demora 2 horas pra chegar no 2do andar. 3. Localização excelente. Ao lado do Belmonte, Astor e etc. É o que salva.', neg
+
+'Localizado em Ipanema porem em rua ermo, perigoso para sair a noite. Hotel de aparencia acanhada e péssima e uma recepção razoavel. Os quartos apertados e com pouca ventilação, com cheiro de ambiente fechado. Definitivamente nao vale o que cobra, com esse valor de diária com certeza achara outros hotéis melhores.', neg
+
+'Escolher este hotel foi simples: pertence à Rede Accor? Está na localização que desejo? Reservei! Infelizmente não foi tudo como esperava. O atendimento neste hotel é deplorável! Os recepcionista julgam mais importante a conversa entre eles do que atender ao hóspede no balcão. Não foi uma e nem duas vezes que aconteceu comigo e presenciei com outros colegas. Escolhi o. ', neg
+
+'O hotel fica numa posição privilegiada, entre as praias de Ipanema e Copacabana, com diversas atrações por perto. No entanto, os serviços prestados... muito ruins! Os elevadores (dois) estavam com problemas, não abriam as portas direito; a piscina do hotel (na verdade, uma raia) tinha cadeiras velhas, com o encosto furado ou rasgado; a jacuzzi estava sem uso; mas o. ', neg
+
+'Frequentamos esse hotel assim como o Mercure da Francisco Otaviano (Arpoador) e Leblon, já alguns anos. O Ipanema, assim como o do Leblon, estão precisando urgentemente de uma manutenção para continuar a cobrando os preços. Para tudo, inclusive falta de oferta de quartos no Rio, há um limite. A qualidade decadente desse serviço no Rio de Janeiro está nos fazendo. ', neg
+
+'Note mal cuidado e mal conservado. Móveis velhos, paredes sujos, limpeza muito mal feita. A maior parte dos funcionários atende aos pedidos dos hóspedes com má vontade.', neg
+
+'Tive péssima experiência no Mercure Ipanema (Rio de Janeiro Brasil) onde tinha originalmente feito a reserva: falta de agua até as 23hs sem nenhum encaminhamento emergencial por parte da gerência; hospedes estarrecidos; lençois com manchas de sangue; paredes sujas!  Em função disso solicitei mudança para o Mercure Arpoador às 23hs e fui atendida. Devo ressaltar a cortezia dos funcionários. ', neg
+
+'Se nao se importar com o preço (absurdo) e com a localização(ruim), hospede-se lá, pois esses nao sao qualificadores desse estabelecimento. Ainda por cima desperdicei meus pontos quando paguei com vouchers. ', neg
+
+'O serviço de estacionamento é péssimo. A limpeza e conservação do quarto é sofrível. O atendimento na recepção complicado pela visível falta de funcionários. Um hotel de 3 estrelas com preço de 4 em qualquer lugar do mundo. Vou reconsiderar, fiquei mais uma vez nesse hotel para dar mais uma chance, afinal sou cliente Accor no mundo todo. ', neg
+
+'Esqueça o que conhece de qualidade Mercure. Neste hotel você vai encontrar apartamento quebrado, ar condicionado lotado de poeira, controle remote sem funcionar, banheiro danificado, fechaduras quebradas, sujeira no quarto. Um desastre. Fique num hotel de esquina bem barato que vai encontrar qualidade melhor que aqui.', neg
+
+'Péssima relação custo benefício. Os quartos necessitam de uma reforma pois estão muito velhos, além de ter banheiros minúsculos. O café da manhã é o piior que já provei em qualquer hotel da rede Accor pães ruins, poucas frutas, sucos sem sabor, . Apesar disto, a diária é de um hotel de categoria superior.', neg
+
+'O Hotel deve ter sido muito bom quando novo, como todos os Mercure em geral, mas está com sinais de descuido e envelhecimento que julgo incompatíveis com a rede e, principalmente, com os valores cobrados. Começa pela recepção, um dos funcionários da noite que se comportava como se estivesse "na praia com os amigos", literalmente berrando ao telefone enquanto eu ', neg
+
+'Quarto apertado e banheiro menor ainda. Cobra muito caro pelo pouco que oferece. Pela diária de R$ 522 merecia entregar bem mais. Decepcionante!', neg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'Estive neste hotel no período de 26 a 29 de dezembro de 2009 e o escolhi após longas pesquisas na internet, especialmente no Trip Advisor, sendo obrigatório meu depoimento a respeito do Mercure Ipanema. Buscava um hotel bem localizado, confortável, limpo, tranqüilo e condizente com a diária cobrada (R$320,00 - sem café). Em função, principalmente, da localização, escolhemos este hotel...', neg
+
+'O quarto em que eu estava hospedado no (503) era tão barulhento que ele é sentida não foram janelas. Foi impossível dormir sem tampões !! Um hotel de qualquer categoria deve oferecer pelo menos 3 coisas : uma boa cama, um quarto insonorizado e um bom chuveiro. No Mercure Ipanema a cama é ok, o chuveiro é ok, mas o...', neg
+
+'paguei preço de vista pro mar e tinha um monte de arvore que atrapalhava a vista...café da manha meia boca, lugar apertado; pelo preço da diária poderia ter ficado em hotel melhor...a única coisa q salvava era a localização...', neg
+
+'hei o hotel bastante limitado. Os quartos são pequenos e desconfortáveis (além de terem um visual "frio" demais), o café tem poucas opções, e o maior atrativo do hotel é a localização em frente à praia de Copacabana (o que para mim não compensa o custo x benefício em relação aos chamados hotéis de baixo custo).', neg
+
+'Excelente localização na praia de Copacabana e próximo do Forte e de Ipanema. Quarto antigo e banheiro pequeno, faltando manutenção. Durante a madrugada foi necessário desligar o frigobar, devido ao barulho.', neg
+
+'Hotel estava em obras e espero que possa melhorar. O quarto era muito pequeno e o restaurante estava sendo pintado no meio do cafe da manha . Servico foi ok. O Rio esta mal de opcoes de hoteis e este esta longe de ser brilhante. Mas tem uma boa cama e e limpo e seguro', neg
+
+'Estive nesse hotel a trabalho e não gostei da acomodação, achei o quarto pouco iluminado, a internet era muito instável e muito lenta. A localização do meu quarto ficava no fundo do hotel então havia um pouco de barulho. O café da manhã possui poucas opções e o espaço era bem pequeno. O que mais me assustou foi valor da...', neg
+
+'Talvez seja melhor para o turismo padrão , quartos pequenos e escuros , mas barulhento , café da manhã razoável apenas. Também na faixa de R$ 400,00 para apartamentos mal localizados. Se foi esse preço imagino o valor para os com vista para a Orla , que deve ser linda de lá , mas como não tive nem isso ,...', neg
+
+'Tinha planejado de ficar uma semana neste hotel. Quando cheguei,só pelo atendimento já senti que não iria ser muito facil. Na recepção não sabia dizer nenhuma informação turistica direito ( era tudo acho que, acho que.... ) Ainda bem que tinha um mapazinho ainda antigo. Quando perguntei de um restaurante, me enviaram para uma padaria, café horrivel ... e é...', neg
+
+'Mas ... o quarto, não era o que nós spected para o preço que paga. o melhor, tendo Posto 6 em frente a rua, melhor praia caipirinhas no Rio. o café da manhã era pobre, não sucos naturais, escuro, sem janelas. há um ginásio e spa no terraço, mas parecia muito abandonado.', neg
+
+'A localização é perfeita. Mas por que razão eles têm quartos tão pequenos? Há quartos disponíveis, para que a atualização foi possível. Mas por que cobrar 50 reais para um quarto maior? Evite os quartos sem vista para o mar, você se sente invadido pelas favellas quando se abre a janela. Muito deprimente. O hotel precisa para completar a sua...', neg
+
+'A localização é otima mas a pousada é pessima. Cheiro de mofo, atendimento ruim. Quando nos hospedamos estava acontecendo uma festa dos funcionarios que o barulho acabou de madrugada. Total falta de respeito com todos. Café da manhã ruim também. Não recomendo.', neg
+
+'Recentemente do uma reserva pó site do hostel, pagando 50% do valor da estadia. 12 dias antes do dia esperado para o check-in, mandei e-mail, sem resposta, e no dia seguinte, liguei e recebi a informação de que seriam apenas 50 reais de multa. Pedi o cancelamento, só que desmentiram a informação anterior, e a multa seria mais de 200...', neg
+
+'Quando você entra no site, parece um lugar lindo e muito bem cuidado. Quando você chega lá, você percebe que eles tem um fotógrafo excelente. O lugar estava muito mal cuidado, é tudo tosco e as áreas comuns são sujas. A porta do quarto não fechava! A cama era altamente desconfortável. A localização é muito boa, mas mesmo assim não...', neg
+
+'Fiquei hospedada na pousada em quarto individual com banheiro coletivo no final de semana do dia 22/09/2012 e nunca mais volto lá. O quarto e os banheiros estavam extremamente sujos, as areas coletivas, além de sujas, claramente não tem manutenção. A piscina, grande atrativo na hora da reserva, estava tão suja que ninguém se atreveu a entrar. A cor da...', neg
+
+'A pousada mostra uma coisa no site, mas ao vivo é muito diferente! Fiquei em um quarto de casal, com janela para a piscina. Um inferno, muito barulho quando tem qualquer pessoa fora, e o pior, o quarto inteiro tem janela, sem uma cortina que bloqueia a luz. 6 horas da manhã o quarto estava completamente claro. Chegamos sabado a..', neg
+
+'O Hostel Bonita Ipanema parece um lugar muito agradável, limpo e confortável pelas fotos que vemos no site. Porém, minha experiência nesse local foi extremamente desagradável e me senti muito enganada. As áreas comuns são mal cuidadas e sem manutenção, a piscina além de ser pequena é suja. Os banheiros coletivos são pequenos e mal iluminados. Fiquei no melhor quarto,.', neg
+'Quanto a limpeza: Nota O (zero). Ficamos em um quarto de casal e durante a estada fizemos uso de dois banheiros coletivos que, permanentemente, se encontravam sujos. Eram feitas apenas duas limpezas ao dia, muito embora o cartaz fixado nas portas informasse que seriam feitas várias (duas limpezas não podem ser consideradas várias). Além disso tivemos a oportunidade de observar...', neg
+
+'Fiquei 2 vezes hospedada no BONITA a primeira não liguei muito p sujeira e mau cheiro pois eu estava só d passeio então mau dormia chegava de manhã e tentava dormir o que é quase impossível lá pois os funcionários só falam gritando ...fora o barulho que acontece com as festas que a dona suboloca para pessoas de fora deixando...', neg
+
+
+'olha fiquei nessa pousada 2 vez na primeira fiquei mais de uma semana e como era dezembro pensei que a zona fosse pela data a segunda vez resolvi dar um voto de confiança e me ferrei ..vc acorda com os 6 banheiros entupidos sempre já que não tem funcionários para limpa los a noite ops depois das 15 16 hs.', neg
+
+'A pousada é péssima, não caia nesta roubada. Para se ter uma ideia pedimos para o transfer que a pousada oferece nos apanhar no Galeao e quando chegamos, às 23h, não haviam mandado carro para nos apanhar. Quando chegamos na pousada havíamos reservado quarto para casal e só tinha um quarto de solteiro a nossa espera e nao tinha nenhum...', neg
+
+'O Bonita Ipanema se auto-denomina uma pousada como vemos no site, mas se trata de um albergue. Ambiente despojado, sem conforto e sem a mínima estrutura. Dos 5 dias em que fiquei hospedada, só tive água pra tomar banho 2 dias. A piscina é suja, o café da manhã é simplório, os funcionários são desatenciosos e demoram uma eternidade para...' , neg
+
+'Localização e decoração de funcionários são ótimos e encantador. Café da manhã farto e delicioso. MAS, é impossível dormir à noite (tente dormir durante o dia, muito mais tranqüila). Há uma regra dizendo que nenhum barulho depois das 10h, infelizmente até mesmo os membros da equipe não respeito, (e, em seguida, você vê-los dormir e/ou relaxar no pátio durante o...', neg
+
+'Eu fui forçado a ficar aqui com o resto do meu grupo de escola - nós tivemos B de dormitório, a um passado do escritório dos gestores em frente à sala de bagagem. O quarto para o material de limpeza está ao lado, e cheirava tão fortemente de produtos químicos, senti doente. Os lençóis da cama estavam manchados, pão amanhecido...', neg
+
+' hostel está bem localizado mas que é a única coisa boa sobre isso. Eu fiquei em um quarto privativo de ensuite, e eu não recomendaria ninguém ficar lá.O quarto estava ao lado do bar, pelo que foi muito barulhento, impossível de dormir bem. O colchão era terrível, roupa de cama e toalhas pareciam sujos. esgoto cheiro no banheiro. Em..', neg
+
+'Chegamos na Bonita para uma estadia de 3 noite e, sim, como muitos dos comentadores dizer a localização é incrível, à direita na melhor parte de Ipanema, ao lado de restaurantes, bares, lojas e a 3 quadras da praia e do mesmo ao Laguna. O quarto de casal era limpo-hsi e houve uma forte cheiro de lixívia que permaneceu bastante...', neg
+
+'O Hotel teve um quarto duplo muito Pobre condições (integradas multifuncionais e água todo o chuveiro, não tomadas, muito antiga pintura na parede) e no topo de que, a equipe foi ou arrogante ou ausente. Realmente é sentida como nós pago para estar em Ipanema, mas o serviço foi muito abaixo você maio espera para o preço que paga. Eu...', neg
+
+'O hotel se hospedaram 4 noites Bonita durante a semana de abril 18º, este foi um tipo experiência. O Hotel chegou no hotel muito entusiasmado parece nice do fora mas nossos clima mudou rapidamente após, falamos para o Recepcionista. Muito pequenas e profissional, ela Senti indicam que ela não como Francesa pessoas em todos os (Nós 4 francesa que viajam),...', neg
+
+'Os lençóis e as toalhas possuem Suspeita Amarelado pontos. Os chuveiros parecem ser feita uma vez por mês e não Hidráulicas. Ninguém aqui heard de um rodilha. e I segundo o comentário anterior, é uma festa Place completa com tudo que vêm com que: ie desagradável banheiro com não papel higiênico porque as pessoas possa pechincha. Não que você pode...', neg
+
+'Realmente, o melhor é a localização e os atendentes (funcionários em geral) e nada mais. Porque o Hostel não oferece: toalhas de banho, toalha de mão, pano para pisar ao sair do banho, sabonete, shampoo, condicionador, tv, roupa de cama.. WIFI pega o suficiente para não conectar; sinal péssimo. O MICRO quarto (privativo, com um NANO banheiro privativo) que me...', neg
+
+'Fiquei no quarto individual single. Foi um dos piores lugares que dormi na vida. A porta do quarto é vazada, você escuta TODOS os barulhos do Hostel. O recepcionista deixa a TV super alta até de madrugada dificultando dormir. Banheiro muito sujo. Não recomendo.', neg
+
+'O Hostel não investe no bem estar, cheiro de mofo, café da manha muito simples pelo valor pago. Sem ar-condicionado, banheiro ruim. Nao tem frigobar. Eh um quarto de motel pobre. Sem nada... Voce paga para estar na Farme mas poderia ficar em outro lugar proximo que é mais barato e mais limpinho. Alias o Rio inteiro está numa decadencia...', neg
+
+'O banheiro comunitário é horrível e fede! O quarto sequer possui paredes de verdade, é sujo, apertado, fede como um banheiro! Contatamos o Hostel na possibilidade de ir em 2 adultos e 2 crianças E eles nos colocaram em um quarto com uma "cama" a mais que era um lixo! Lugar terrível! Jamais voltarei lá estraga o novel de Ipanema!', neg
+
+'Encontrei o banheiro mais sujo de todos os albergues em que fiquei. Lixeiras transbordando de papel higiênico usado. quartos apertados e abafados. Não possuem controle de quem entra e sai e alojaram um hóspede em uma das camas que meu grupo ocupava. A única vantagem é a localização, uma quadra da praia.', neg
+
+'Os quartos são do tamanho de um armário pequeno, sujo, cheiro de mofo, eles dão-lhe um saco de plástico com lençóis antigos e casos antigos de almofadas que não correspondem, algo a sua avó poderia utilizar. Nenhuma televisão, sem rádio, não tem ar condicionado. Apenas as paredes em branco de olhar para. Eu percebi que eu não tinha uma toalha...',neg
+
+'I se hospedaram para duas noites em um quarto single (tamanho do quarto foi 7qm),...o hostel em geral é malcheiroso, a equipe não amigável, muito adornos (fora e dentro, as paredes são muito fina),...não áreas comuns, cozinha é melhor não mencionar, são apenas duas slizes de produzido etc.os preços são como a cada onde etc.I se hospedaram no anohter hostel...', neg
+
+'reat localização: Ipanema, a apenas 5 minutos a pé da praia. Parte, ele é uma Horrível lugar para estadia, os quartos são muito deixada suja e noisy. Banheiro são compartilhados, mas há apenas 3 (para meninas no 1º andar, 1 para meninos no segundo e a mistura 1 no 3º.), para que não forem suficientes e espaço é muito pequenas...', neg
+
+'Nós se hospedaram no terrasse Hostel para 3 noites. O hotel tem uma excelente localização, a apenas uma quadra da praia de Ipanema (entre post 8 e 9). O quarto não está realmente impecáveis com areia sobre o piso, lençóis são Sujos e antiga, realmente comodidade. Um quarto (n 9) parede com fina madeira painel, para você ouvir tudo no...', neg
+
+'Nós Chegaram muito tarde no este hotel e fez check-out início da manhã. Definitivamente não com o que não podemos espera, com base nos comentários sobre esse local e na hostelz e hotelworld. Embora reformado em 2007, o Place Observava nada como fotos e é um realmente ruim. O quarto que se hospedaram no Observava partem e que este descolados...', neg
+
+'Só fiquei o hotel Mirador uma noite,havia o problema de ar-condicionador,chamei o funcionário verificar,depois a recepção me trocou o quarto.Não acho o hotel vale cada centavo de tarifa,mas claro a localização é boa para ir praia de Copacabana.', neg
+
+'A localizacao do hotel e excelente, fica proximo a comercio e metro, as instalacoes do quarto sao otimas, o que fiquei tinha sala e quarto, porem, nao consegui ficar por mais de uma noite, o isolamento acustico e pessimo, quando o vizinho dava descarga parecia que estava dando descarga dentro do apartamento, resultado, nao comsegui dormir e sai no dia...', neg
+
+'O padrão é bastante baixo, especialmente como é anunciado como 4 * hotel. Eu certamente não iria voltar, mas não há são, aparentemente não existem hotéis que estão por um preço razoável no Rio : -( Única coisa boa é a localização que é bastante próximo ao Copacabana.', neg
+
+'Nós Sóbria durante Ano Novo celebração. Todos os hotéis em Copacabana foi demasiado caro comparado com o seu real valor. Comparar com outros que tinha muito bom preço. Mas, em excesso, totalmente!!! Bom para dormir durante a noite, nada mais. Nunca mais voltar lá. Hostis e inúteis.', neg
+
+'O hotel tem uma boa equipe. O gerente nos ajudou com um check-in antecipado e o pessoal do restaurante era bastante para mim durante a minha estadia de 3 noites. Além disso, uma grande vantagem é que é uma quadra da estação de metrô Siqueira Campos. O problema com a maioria dos hotéis em Copacabana é que eles estão desatualizados....', neg
+
+'Linha inferior, tipo de hotel antigo no tea COFFEE BISCUITS . Cada quarto tinha uma sauna. Você podia ouvir sanitários flushing de outros quartos. Cama era decente e limpo. A equipe do roomservice apenas falou português. Comida era OK, a equipe do contador foi muito úteis.', neg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
