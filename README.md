@@ -2,6 +2,8 @@
 
 Este *notebook* visa demonstrar o passo-a-passo de uma análise de avaliações de hotéis, realizadas com o método de aprendizado supervisionado *Random Forest*, cujo objetivo é prever se uma determinada avaliação é positiva ou negativa. Para melhorar a acurácia das predições, utilizamos alguns métodos de manipulação e contagem das palavras nas avaliações. 
 
+*Observação*: no *branch* "Docker", o projeto contém os arquivos com as configurações necessárias para subir o mesmo em um contâiner
+
 ### Requisitos
 - Anaconda com Python v3.7
 
