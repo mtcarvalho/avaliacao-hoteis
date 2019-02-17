@@ -1,12 +1,9 @@
-version:  '3'
+version:                '3'
 services:
   datascience-notebook:
-      image:    jupyter/datascience-notebook
+      image:            jupyter/scipy-notebook
       volumes:
-        - ${LOCAL_WORKING_DIR}:/home/work
-        - ${LOCAL_DATASETS}:/home/work/datasets
-        - ${LOCAL_MODULES}:/home/work/modules
-        - ${LOCAL_SSL_CERTS}:/etc/ssl/notebook
+        - .:/home/jovyan/work/avaliacao-hoteis
       ports:
-        - ${PORT}:8888
-      container_name:   jupyter_notebook
+        - 8888:8888
+      container_name: datascience-notebook-container
